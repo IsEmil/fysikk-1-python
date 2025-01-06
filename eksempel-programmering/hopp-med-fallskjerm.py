@@ -31,11 +31,15 @@ tliste=[t]
 aliste=[a(v)]
 
 # Simulasjonen
-while t<10: # Simulasjonen kjører til t blir 10 sekunder
+while t<=10: # Simulasjonen kjører til t blir 10 sekunder
     v=v+a(v)*dt # Vi regner ut den nye farten med formel A fra OneNote
     s=s+v*dt # Vi regner ut den nye farten med formel B fra Onenote
     t=t+dt
     
+    if (s>=50 and b==0):
+        print(f"fallskjermhoppern når 50 meter etter {t:.2f} sekunder")
+        b=b+1
+
     sliste.append(s) # Den nye s-verdien legges til i sliste
     vliste.append(v) # Den nye v-verdien legges til i vliste
     tliste.append(t) # Den nye t-verdien leges til i tliste
