@@ -56,3 +56,5 @@ xlabel("$Tid$ / s")
 ylabel("$Fart$ / m/s")
 grid() # Legger på et rutenett
 show() # Sørger for at neste graf tegnes i et nytt vindu
+
+print(f"fallskjermhoppern når 50 meter etter {t:.2f} sekunder")
